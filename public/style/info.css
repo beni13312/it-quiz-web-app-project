@@ -1,0 +1,69 @@
+@import "style.css";
+
+/* info.php */
+
+#info-information p{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+#info-information {
+    background: white; /* White background */
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Gradient border effect */
+#info-information::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border-radius: 28px; /* Should be slightly larger than #info-information */
+    z-index: -1; /* Puts it behind the content */
+    filter: blur(10px); /* Creates the glow effect */
+    opacity: 0.8; /* Optional: reduces intensity */
+}
+
+
+.info-leiras {
+    background-color: rgba(0, 0, 0, 0.1); /* Átlátszó fehér háttér a szövegnél */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#info-information h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#info-information h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#info-information ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#info-information ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#info-information ul li strong {
+    font-weight: bold;
+}

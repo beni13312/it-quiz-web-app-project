@@ -1,0 +1,180 @@
+@media (max-width: 469px) {
+    body{
+        font-size: 1.2rem;
+    }
+    #header{
+        font-size: 1.2rem;
+        min-height: 60px;
+    }
+    #category a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .category-element {
+        min-width: 250px;
+        min-height: 70px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #admindash-question{
+        width: 90%;
+    }
+    .admindash-ans input[type=text]{
+        width: calc(90% + 20px);
+    }
+    .admindash-ans input[type=text]:hover{
+        width: calc(90% + 20px);
+    }
+
+    #quiz-next-prev{
+        height: 40px !important;
+    }
+
+
+}
+@media (max-width: 664px) {
+    #cat-title{
+        text-align: center;
+    }
+    body{
+        font-size: 1.1rem;
+        height: 100vh;
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) calc(20px + env(safe-area-inset-bottom)) env(safe-area-inset-left);
+    }
+    .body{
+        margin: 0 !important;
+    }
+    #category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Több hely a gombok között */
+	}
+
+    .category-element {
+        min-width: 250px;
+        min-height: 70px;
+        height: max-content !important;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #admin-flexbox-menu {
+        flex-direction: column;
+        min-height: calc(230px - 20px);
+        min-width: 100%;
+        gap: 10px;
+    }
+    #admin-logout{
+        flex-direction: column;
+    }
+    #admin-flexbox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 230px;
+    }
+
+    .admin-flexbox-menu-b {
+        max-width: 100%; /* Make buttons full width of the container */
+        padding: 15px; /* Increase padding for larger buttons */
+        min-width: 0; /* Remove min-width restriction */
+    }
+    #admin-logout input[type=submit] {
+        width: 100%;
+    }
+    #info-information {
+        background: rgba(255, 255, 255, 0) !important; /* White background */
+        padding: 0;
+        border-radius: 0 !important;
+        width: 80%;
+        margin: 20px auto;
+        position: relative !important;
+        box-shadow: none !important;
+    }
+    
+    /* Remove or comment out this block to remove the gradient border */
+    #info-information::before {
+        content: none !important;
+        display: none !important;
+        filter: none;
+    }
+    #info-body{
+        margin: 0;
+        padding: 0;
+    }
+
+    #admindash-add::before {
+        content: none !important;
+        display: none !important;
+        filter: none;
+    }
+    #admindash-add {
+        background: rgba(0, 0, 0, 0) !important;
+    }
+    #admin-quiz-manage-table {
+        min-width: 600px;
+    }
+    #admin-quiz-manage-table-wrapper {
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        margin-top: 20px;
+    }
+    .admin-quiz-manage-category-row{
+        width: 100%;
+    }
+    #admin-quiz-manage-category{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        width: 100% !important;
+        margin: 0 auto 20px auto !important;
+        box-sizing: border-box;
+
+        float: none !important;
+        min-width: 0;
+
+    }
+    #admin-quiz-manage-container{
+        width: 100% !important;
+    }
+    #admindash-manage{
+        padding: 0 !important;
+    }
+    #admin-quiz-manage-container {
+        display: block !important;
+    }
+
+
+
+}
+@media (max-width: 768px) {
+    .body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 800px){
+
+    #admin-flexbox-title{
+        display: none;
+    }
+
+}

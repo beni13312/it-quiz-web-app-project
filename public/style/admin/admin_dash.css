@@ -1,0 +1,52 @@
+@import "../style.css";
+
+/* admin_dash */
+
+#admin-flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+#admin-logout{
+    display: flex;
+    justify-content: flex-end;
+}
+#admin-submit-logout{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    background: rgb(196, 196, 196);
+    color: black;
+    border: none;
+    border-radius: 8px;
+}
+#admin-submit-logout:hover{
+    transition: all 1s ease;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+
+
+}
+#admin-flexbox-menu{
+    display: flex;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    gap: 25px;
+    font-size: 16px;
+    width:fit-content;
+    height: 30px;
+    max-width: 800px;
+    padding: 10px;
+}
+.admin-flexbox-menu-b{
+    display: flex;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgba(175, 175, 175, 0.37);
+}
+.admin-flexbox-menu-b:hover{
+    background-color: rgba(154, 154, 154, 0.37);
+}
+

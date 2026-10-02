@@ -1,0 +1,138 @@
+@import "style.css";
+@import "modules/load_spin.css";
+@import "modules/progress_bar.css";
+
+
+
+#quiz-feladat-frame{
+    display: flex;
+    flex-direction: column;
+    min-height: 82vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#quiz-feladat{
+    font-size: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+#quiz-answers{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quiz-ans{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 500px;
+    min-height: 40px;
+    background-color: #e5e3e3;
+    border-radius: 10px;
+}
+.quiz-ans-ch input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.quiz-ans:hover{
+    background-color: #d3d1d1;
+}
+#quiz-check{
+    margin-top: 10px;
+    width: 100% !important;
+}
+#quiz-cat-title{
+    margin-bottom: 20px;
+}
+#quiz-kerdes{
+    margin-bottom: 10px;
+}
+
+#quiz-check, #quiz-next, #quiz-previous{
+    border: none;
+    border-radius: 8px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: rgb(255, 255, 255);
+}
+
+#quiz-next-previous{
+    margin: 10px 0 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*#quiz-previous-container{*/
+/*    float: left;*/
+/*}*/
+/*#quiz-next-container{*/
+/*    float: right;*/
+/*}*/
+
+.quiz-wrong{
+    border: 1px solid red;
+    box-shadow: 2px 2px 8px red;
+}
+
+.quiz-good{
+    border: 1px solid green;
+    box-shadow: 2px 2px 5px green;
+}
+
+.progress-bar-container {
+    margin-bottom: 20px;
+}
+
+
+#quiz-feladat-result::before{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient border */
+    filter: blur(10px);
+    border-radius: 22px; /* Rounded corners for the gradient border */
+    z-index: -1; /* Place behind the form content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#quiz-feladat-result{
+    align-content: center;
+    font-size: larger;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 30px 10px 10px 10px;
+    background-color: #ffffff; /* Ensure content is visible */
+    border-radius: 20px;
+    border: solid transparent; /* Transparent border for space */
+    position: relative;
+    max-width: 90%; /* Maximális szélesség, hogy ne nőjön túl nagyra */
+    margin: 80px auto; /* Középre helyezi vízszintesen, a margin-top már nem szükséges, mert a margin auto automatikusan beállítja */
+
+}
+#quiz-szamlalo {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#backto_home{
+    margin-top: 20px;
+    display: block;
+    color: #2575fc;
+}

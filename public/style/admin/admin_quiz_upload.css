@@ -1,0 +1,102 @@
+@import "../style.css";
+
+#admindash-add {
+    width: 600px;
+    padding: 30px 10px 10px 10px;
+    background-color: #ffffff; /* Ensure content is visible */
+    border-radius: 20px;
+    border: solid transparent; /* Transparent border for space */
+    position: relative;
+    max-width: 90%; /* Maximális szélesség, hogy ne nőjön túl nagyra */
+    margin: 80px auto; /* Középre helyezi vízszintesen, a margin-top már nem szükséges, mert a margin auto automatikusan beállítja */
+}
+
+#admindash-add::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient border */
+    filter: blur(10px);
+    border-radius: 22px; /* Rounded corners for the gradient border */
+    z-index: -1; /* Place behind the form content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+#admindash-form input, select{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(175, 175, 175, 0.37);
+}
+#admindash-form input[type=button], input[type=submit],select{
+    cursor: pointer;
+}
+
+#admindash-form input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+#admindash-form input[type=text]{
+    height: 25px;
+    font-size: 16px;
+}
+
+#admindash-cat{
+    margin-left: 10px;
+}
+
+#admindash-question{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: calc(60% - 12px);
+}
+.admindash-question input[type=text]:hover{
+    width: 61%;
+    transition: max-width 0.9s ease;
+}
+
+.admindash-ans{
+    margin:10px;
+}
+.admindash-ans input[type=text]{
+    width: 60%;
+}
+.admindash-ans input[type=text]:hover{
+    width: 61%;
+    transition: max-width 0.9s ease;
+}
+
+#admindash-ans-addrm{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#admindash-ans-add:hover{
+    background-color: rgb(153, 231, 134);
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+#admindash-ans-rm:hover{
+    background-color: rgb(231, 134, 134);
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+#admindash-submit{
+    margin: 10px;
+}
+#admindash-submit:hover{
+    background-color: #5291ff;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+#admin-add-title{
+    margin-bottom: 10px;
+    text-align: center;
+}

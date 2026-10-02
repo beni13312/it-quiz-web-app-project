@@ -1,0 +1,43 @@
+@import "style.css";
+
+/* index.php */
+
+
+#cat-title {
+    font-size: 2.5em;
+    color: #2575fc;
+    margin: 20px;
+}
+
+#category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.category-element-a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-element {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+}
+
+.category-element:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

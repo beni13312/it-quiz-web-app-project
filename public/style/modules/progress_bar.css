@@ -1,0 +1,17 @@
+/* Container for the progress bar */
+.progress-bar-container {
+    width: 100%; /* Full width of its container */
+    height: 20px; /* Height of the progress bar */
+    background-color: #f3f3f3; /* Light background for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures the rounded corners appear for the progress */
+}
+
+/* The progress bar itself */
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    border-radius: 8px 0 0 8px; /* Rounded corners for the progress bar (left side only) */
+    transition: width 0.3s ease; /* Smooth transition when changing width */
+}

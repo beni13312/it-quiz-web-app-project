@@ -1,0 +1,13 @@
+:root{
+    --background-gradient: linear-gradient(135deg, #6a11cb, #2575fc);
+    --grad-color-purple: #6a11cb;
+    --grad-color-blue: #2575fc;
+    --text-color: rgb(255, 255, 255);
+    --bg-color: rgb(196, 196, 196);
+    --border-radius: 8px;
+
+    --button-bg-r-color: rgb(231, 134, 134);
+    --button-bg-g-color: rgb(153, 231, 134);
+    --button-bg-b-color: #5291ff;
+
+}

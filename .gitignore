@@ -1,4 +1,5 @@
 *.DAV
 *.env
 composer.lock
+/vendor/
 

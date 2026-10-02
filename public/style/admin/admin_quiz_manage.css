@@ -1,0 +1,96 @@
+@import "../style.css";
+
+#admindash-manage {
+    margin: 80px auto;
+    padding: 20px 10px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scroll-drag{
+    cursor: grab;
+    overflow-x: auto;
+    overflow-y: hidden;
+    user-select: none;
+    -webkit-overflow-scrolling: touch;
+}
+.scroll-drag:active {
+    cursor: grabbing;
+}
+
+#admin-quiz-manage-category{
+    float: left;
+    border-radius: 8px;
+    background-color:   rgba(175, 175, 175, 0.37);
+    margin: 0 20px;
+    padding: 10px;
+}
+
+#admin-quiz-manage-container {
+    display: flex;
+    flex-direction: row;
+    max-width: calc(115px + 2*20px + 900px); /* kategória + 2*20px margin + table container */
+    width: 95%;
+}
+
+.admin-quiz-manage-category-row{
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.admin-quiz-manage-category-row:hover{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+#admin-quiz-manage-table-wrapper{
+    overflow-x: auto;
+    height: 100%;
+    width: 100%;
+}
+#admin-quiz-manage-table{
+    tr:nth-child(even) {background-color:  rgba(175, 175, 175, 0.37);}
+    border-collapse: collapse;
+    text-align: center;
+    width: 900px;
+    min-width: 100%;
+    table-layout: auto;
+}
+#admin-quiz-manage-table thead th {
+    tr:last-child {background-color:  rgba(175, 175, 175, 0.37);}
+    background-color: rgba(175, 175, 175, 0.37);
+    padding: 10px;
+}
+#admin-quiz-manage-table td {
+    padding: 5px 10px;
+}
+
+.admin-quiz-manage-table-button{
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    background:   rgba(175, 175, 175, 0.37);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.admin-quiz-manage-table-button:hover{
+    background-color: rgb(231, 134, 134);
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+#admindash-manage-title{
+    margin-bottom: 10px;
+}
